@@ -17,9 +17,6 @@ function disableImageActions(selector) {
         img.addEventListener('touchstart', event => {
             event.preventDefault();
         });
-
-        // Optional: Disable pointer events for extra protection
-        img.style.pointerEvents = 'none';
     });
 }
 
