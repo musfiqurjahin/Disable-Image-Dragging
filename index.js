@@ -7,20 +7,18 @@ function disableImageActions(selector) {
         img.addEventListener('dragstart', event => {
             event.preventDefault();
         });
-        
-        // Prevent right-click (desktop/mobile)
+
+        // Prevent right-click (desktop/mobile) and long-press context menu on mobile
         img.addEventListener('contextmenu', event => {
             event.preventDefault();
         });
-        
-        // Prevent touch hold behavior (mobile)
-        img.addEventListener('touchstart', event => {
-            event.preventDefault();
-        });
+
+        // Remove touchstart preventDefault to allow clicks on mobile
     });
 }
 
-// Apply action in
+// Apply actions in:
 disableImageActions('.verified-badge-container img'); // For verified badge images
 disableImageActions('.logo img'); // For logo images
+
 
