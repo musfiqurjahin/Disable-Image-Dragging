@@ -1,14 +1,28 @@
 //Created_by_JaHIN//
 
-// Function to disable drag on images:
-function disableImageDrag(selector) {
+// Function to disable drag, long press, and download on images
+function disableImageActions(selector) {
     document.querySelectorAll(selector).forEach(img => {
+        // Prevent drag action (desktop)
         img.addEventListener('dragstart', event => {
-            event.preventDefault(); // Prevent drag action
+            event.preventDefault();
         });
+        
+        // Prevent right-click (desktop/mobile)
+        img.addEventListener('contextmenu', event => {
+            event.preventDefault();
+        });
+        
+        // Prevent touch hold behavior (mobile)
+        img.addEventListener('touchstart', event => {
+            event.preventDefault();
+        });
+
+        // Optional: Disable pointer events for extra protection
+        img.style.pointerEvents = 'none';
     });
 }
 
-// Apply drag prevention on both verified badge and logo images
-disableImageDrag('.verified-badge-container img'); // For verified badge images
-disableImageDrag('.logo img'); // For logo images
+// Apply action
+disableImageActions('.verified-badge-container img'); // For verified badge images
+disableImageActions('.logo img'); // For logo images
