@@ -1,6 +1,6 @@
 //Created_by_JaHIN//
 
-// Function to disable drag, long press, and download on images
+// Function to disable drag, long press, and download on images but keep them clickable
 function disableImageActions(selector) {
     document.querySelectorAll(selector).forEach(img => {
         // Prevent drag action (desktop)
@@ -20,6 +20,7 @@ function disableImageActions(selector) {
     });
 }
 
-// Apply action
+// Apply action in
 disableImageActions('.verified-badge-container img'); // For verified badge images
 disableImageActions('.logo img'); // For logo images
+
