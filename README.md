@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Drag and Download Blocker - Created by JaHIN</title>
-</head>
-<body>
-    <h1>Image Drag and Download Blocker</h1>
-    <p>This script is designed to block users from dragging, right-clicking, or downloading images on a webpage, while still keeping the images clickable. It is useful when you want to protect specific images from being easily copied or saved, but you also want to maintain their functionality (e.g., clicking on logos or badges).</p>
+
+<h1>Image Drag and Download Blocker</h1>
+<p>This script is designed to block users from dragging, right-clicking, or downloading images on a webpage, while still keeping the images clickable. It is useful when you want to protect specific images from being easily copied or saved, but you also want to maintain their functionality (e.g., clicking on logos or badges).</p>
 
   <h2>Features</h2>
     <ul>
