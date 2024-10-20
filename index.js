@@ -20,5 +20,9 @@ function disableImageActions(selector) {
 // Apply actions in:
 disableImageActions('.verified-badge-container img'); // For verified badge images
 disableImageActions('.logo img'); // For logo images
+disableImageActions('.loader-container'); // For Loader
+disableImageActions('.loader-image'); // For Loader img
+
+
 
 
