@@ -22,6 +22,11 @@ disableImageActions('.verified-badge-container img'); // For verified badge imag
 disableImageActions('.logo img'); // For logo images
 disableImageActions('.loader-container'); // For Loader
 disableImageActions('.loader-image'); // For Loader img
+disableImageActions('.container .hero-pic ');
+disableImageActions('.container');
+disableImageActions('.hero-pic ');
+disableImageActions('hero-pic img');
+disableImageActions('.verified-badge');
 
 
 
